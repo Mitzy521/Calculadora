@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Calcu.css">
+    <!--Conección al archivo css que estilizara la calculadora--> 
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+        <div class="buttons">
+            
+            <button class="btn" onclick="appendNumber('1')">1</button>
+            <!--llama la función appendNumber que agrega el numero 1-->
+            <button class="btn" onclick="appendNumber('2')">2</button>
+            <!--llama la función appendNumber que agrega el numero 2-->
+            <button class="btn" onclick="appendNumber('3')">3</button>
+            <!--llama la función appendNumber que agrega el numero 3-->
+            <button class="btn" onclick="appendNumber('.')">.</button>
+            <!--llama la función appendNumber que agrega un punto-->
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <!--llama la función clearDisplay que reestablece y limpia la pantalla-->
+            <button class="btn" onclick="appendNumber('4')">4</button>
+            <!--llama la función appendNumber que agrega el numero 4-->
+            <button class="btn" onclick="appendNumber('5')">5</button>
+            <!--llama la función appendNumber que agrega el numero 5-->
+            <button class="btn" onclick="appendNumber('6')">6</button>
+            <!--llama la función appendNumber que agrega el numero 6-->
+            <button class="btn" onclick="chooseOperation('+')">+</button>
+            <!--llama la función chooseOperation que establece la operacion actual + -->
+            <button class="btn" onclick="chooseOperation('-')">-</button>
+            <!--llama la función chooseOperation que establece la operacion actual - -->
+            <button class="btn" onclick="appendNumber('7')">7</button>
+            <!--llama la función appendNumber que agrega el numero 7-->
+            <button class="btn" onclick="appendNumber('8')">8</button>
+            <!--llama la función appendNumber que agrega el numero 8-->
+            <button class="btn" onclick="appendNumber('9')">9</button>
+            <!--llama la función appendNumber que agrega el numero 9-->
+            <button class="btn" onclick="chooseOperation('*')">*</button>
+            <!--llama la función chooseOperation que establece la operacion actual * -->
+            <button class="btn" onclick="chooseOperation('/')">/</button>
+            <!--llama la función chooseOperation que establece la operacion actual / -->
+            <button class="btn" onclick="appendNumber('0')">0</button>
+            <!--llama la función appendNumber que agrega el numero 0-->
+            <button class="btn" onclick="calculate()">=</button>
+            <!--llama la función calculate que realiza la operación y muestra el resultado-->
+            
+        </div>
+       <!--Creación de los botones--> 
+    </div>
+    <script src="Calcu.js"></script>
+    <!--Conección al archivo javaScrip que realizara la funcionabilidad de los botones-->
+</body>
+</html>
